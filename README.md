@@ -19,7 +19,7 @@ roslaunch vehicle_motion_control motion_controller.launch
 Publish velocity message:
 
 ```bash
-rostopic pub /cmd_vel geometry_msgs/Twist "linear:
+rostopic pub -r 10 /cmd_vel geometry_msgs/Twist "linear:
   x: 2.0
   y: 0.0
   z: 0.0
