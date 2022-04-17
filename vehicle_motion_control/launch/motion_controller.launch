@@ -1,0 +1,4 @@
+<launch>
+<node name = "chassis_controller" pkg = "vehicle_motion_control" type = "chassis_controller" respawn="true" output="screen" />
+
+</launch>
