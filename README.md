@@ -33,12 +33,10 @@ angular:
 
 #### Main Idea
 
-/cmd_vel发布控制小车linear.x和angular.z的信息，subscriber接收到后在callback函数内publish控制每一个轮的线速度
-
+'/cmd_vel' publish command to control the 'linear.x' and 'linear.y' of the vehicle.
+The linear speed of each wheel would be controlled by the 'callback' function in 'subscriber'.
 
 
 #### Problems
 
-1, publish运动指令后subscriber能接收到，但是打开rqt_graph后显示/chassis_controller节点没能发布 /vehicle/Rev1_velocity_controller/command话题
-
-2, 在Gazebo上显示的Wheel_3和Wheel_4 joint坐标有点奇怪，在轮子之外
+1. The Wheel_3 and Wheel_4 joint coordinates displayed on Gazebo are a bit strange, outside of the wheel.
